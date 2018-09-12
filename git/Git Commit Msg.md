@@ -10,7 +10,7 @@
 ```
   
 ```
-<refactor>: Commit Msg
+refactor: Commit Msg
 
 - 변경사항    //명령형이나 현재시제를 사용한다.
 
