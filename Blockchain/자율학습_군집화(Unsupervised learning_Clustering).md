@@ -4,7 +4,7 @@
 
 sample에 대한 지식 없이 similarity(유사도)에 근거하여 cluter들을 구분한다.
 
-패턴 공간에 주어진 유한 개의 패턴들이 서로 가깝게 모여서 무리를 이루고있는 패턴 집합을 군집(cluster) 이라하고 무리지어 나가는 과정을 군집화 (clustring) 라고 한다.
+패턴 공간에 주어진 유한 개의 패턴들이 서로 가깝게 모여서 무리를 이루고있는 패턴 집합을 군집(cluster) 이라고 하고 무리지어 나가는 과정을 군집화 (clustring)라고 한다.
 
 - **hierarchical clustering** 
 
