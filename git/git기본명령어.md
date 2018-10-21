@@ -1,6 +1,6 @@
 
-# Git push/pull
-
+## Git push/pull
+  
 ### 커밋한 로그들 내용 보기
 
 ~~~
@@ -42,10 +42,10 @@ add .
 git rebase --continue
 ~~~  
   
+  
     
-    
-# Git 브랜치
-
+## Git 브랜치
+  
 #### 작업 브랜치 변경
 
 ~~~
@@ -58,8 +58,9 @@ git checkout dev(혹은issue)
 git checkout -b issue/num
 ~~~  
     
-      
-# Git Commit 
+  
+    
+## Git Commit 
 
 #### 커밋 내용 덮어씌우기
 
@@ -78,9 +79,9 @@ git reset
 git reset HEAD~1
 ~~~~  
   
-    
-# Git stash
-
+      
+## Git stash  
+  
 #### 작업 내용 보관
 
 ~~~
