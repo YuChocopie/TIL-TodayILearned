@@ -20,6 +20,11 @@ remote add upstream https://github.com/dbwjd/mashup-android-6th.git
 remote rename origin downstream
 ~~~
 
+fork한 저장소와 origin 저장소를 merge한다.
+~~~
+git fetch upstream
+~~~
+
 #### git 작업 디렉토리의 이름이 바뀌었을 때
 
 - 주소 바꾸기   git remote로 확인
