@@ -1,5 +1,5 @@
 
-##git PUSH/PULL
+## Git push/pull
 
 ### 커밋한 로그들 내용 보기
 
