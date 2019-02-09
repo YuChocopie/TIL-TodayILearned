@@ -40,6 +40,8 @@ sever - Response (응답)
 www (world wide web)
 웹 브라우저 : 서버랑 통신할 때 html 파일을 보여주고 보내주는 통로역할
 P2P (Peer - TO - Peer) : 각각 가지고 싶은 정보가 있는 것을 서로 공유하는것, 모두가 클라이자 서버
+HTML (Hyper Text markup Language)
+Hyper Text = Link
 ~~~
 
 
