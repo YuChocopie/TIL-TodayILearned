@@ -51,7 +51,7 @@
 ## ::example ::
 
 ### **'자기조직화 (Self Organizing)'**  
-https://github.com/YuChocopie/TIL-TodayILearned/blob/master/Blockchain/%EC%9E%90%EC%9C%A8%ED%95%99%EC%8A%B5_%EC%9E%90%EA%B8%B0%EC%A1%B0%EC%A7%81%ED%99%94(Unsupervisd%20learning_Self%20Organizing).md
+https://github.com/YuChocopie/TIL-TodayILearned/blob/master/Blockchain/%EC%9E%90%EC%9C%A8%ED%95%99%EC%8A%B5_%EC%9E%90%EA%B8%B0%EC%A1%B0%EC%A7%81%ED%99%94(Unsupervised%20learning_Self%20Organizing).md
 
 ### **'군집화(Clustering)'** 
 https://github.com/YuChocopie/TIL-TodayILearned/blob/master/Blockchain/%EC%9E%90%EC%9C%A8%ED%95%99%EC%8A%B5_%EA%B5%B0%EC%A7%91%ED%99%94(Unsupervised%20learning_Clustering).md
