@@ -7,10 +7,16 @@ import javax.swing.*;
  * Created by Administrator on 2015-05-10.
  */
 public class DrawShapeCanvas extends JComponent implements MouseListener, MouseMotionListener {
+    StateInterface state;
+
     public DrawShapeCanvas(DrawShapeInterface dsi) {
         this.dsi = dsi;
         addMouseListener(this);
         addMouseMotionListener(this);
+    }
+
+    public void setState(StateInterface state) {
+        this.state = state;
     }
 
     @Override
@@ -18,24 +24,12 @@ public class DrawShapeCanvas extends JComponent implements MouseListener, MouseM
     }
 
     public void mousePressed(MouseEvent e) {
-        if (dsi.getState() == DrawShapeInterface.DRAWING_STATE) {
-            dsi.createShape(e.getX(), e.getY());
-            validate();
-            repaint();
-        }
-        else if (dsi.getState() == DrawShapeInterface.SELECTING_STATE) {
-            dragging = true;
-            sx = e.getX();
-            sy = e.getY();
-            selectedShape = dsi.select(sx, sy);
-        }
+        state.mousePressed(e);
     }
 
     @Override
     public void mouseReleased(MouseEvent e) {
-        if (dsi.getState() == DrawShapeInterface.SELECTING_STATE) {
-            dragging = false;
-        }
+        state.mouseReleased(e);
     }
 
     @Override
@@ -48,19 +42,7 @@ public class DrawShapeCanvas extends JComponent implements MouseListener, MouseM
 
     @Override
     public void mouseDragged(MouseEvent e) {
-        if (dsi.getState() == DrawShapeInterface.SELECTING_STATE) {
-            if (dragging && selectedShape != null) {
-                int x = e.getX();
-                int y = e.getY();
-                int diffX = x - sx;
-                int diffY = y - sy;
-                selectedShape.move(diffX, diffY);
-                sx = x;
-                sy = y;
-                validate();
-                repaint();
-            }
-        }
+        state.mouseDragged(e);
     }
 
     @Override

@@ -15,6 +15,9 @@ public class MainPanel extends JPanel implements ActionListener {
     static final String SELECTION_CMD = "Selection";
     static final String DRAWING_CMD = "Drawing";
     DrawShapeInterface dsi;
+    StateInterface drawingState;
+    StateInterface selectingState;
+    DrawShapeCanvas canvas;
 
     public MainPanel(DrawShapeInterface dsi) {
         super(new BorderLayout());
@@ -26,8 +29,12 @@ public class MainPanel extends JPanel implements ActionListener {
         add(toolBar, BorderLayout.NORTH);
         dsi.selectDrawingShape(RectShapeFactory.RectShapeEnum.RS_RECTANGLE);
 
-        DrawShapeCanvas s = new DrawShapeCanvas(dsi);
-        add(s, BorderLayout.CENTER);
+        canvas = new DrawShapeCanvas(dsi);
+        add(canvas, BorderLayout.CENTER);
+
+        drawingState = new DrawingState(dsi, canvas);
+        selectingState = new SelectingState(dsi, canvas);
+        canvas.setState(drawingState);
     }
 
     protected void addButtons(JToolBar toolBar) {
@@ -122,10 +129,10 @@ public class MainPanel extends JPanel implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         String cmd = e.getActionCommand();
         if (cmd.equals(DRAWING_CMD)) {
-            dsi.setState(DrawShapeInterface.DRAWING_STATE);
+            canvas.setState(drawingState);
         }
         else if (cmd.equals(SELECTION_CMD)) {
-            dsi.setState(DrawShapeInterface.SELECTING_STATE);
+            canvas.setState(selectingState);
         }
         else if (cmd.equals(RECTANGLE_CMD)) {
             dsi.selectDrawingShape(RectShapeFactory.RectShapeEnum.RS_RECTANGLE);
