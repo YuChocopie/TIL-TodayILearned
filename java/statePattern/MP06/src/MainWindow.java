@@ -25,9 +25,14 @@ public class MainWindow extends FrameWindow implements ActionListener {
     private MyButton returnChangesButton;
     private MyButton selectBeverageButton;
 
-    private enum STATES { STATE_0, STATE_LESS_500, STATE_500, STATE_LESS_1000, STATE_EQUAL_OR_MORE_1000};
-    private STATES state;
-    private int balance;
+    StateInterface state0;
+    StateInterface stateLess500;
+    StateInterface state500;
+    StateInterface stateLess1000;
+    StateInterface stateEqualOrMore1000;
+
+    StateInterface state;
+    public int balance;
 
     public MainWindow(String title) {
         super();
@@ -38,7 +43,14 @@ public class MainWindow extends FrameWindow implements ActionListener {
                 System.exit(0);
             }
         });
-        state = STATES.STATE_0;
+
+
+        state0 = new State0(this);
+        state = state0;
+        stateLess500 = new StateLess500(this);
+        state500 = new State500(this);
+        stateLess1000 = new StateLess1000(this);
+        stateEqualOrMore1000 = new StateEqualOrMore1000(this);
         balance = 0;
     }
 
@@ -90,103 +102,48 @@ public class MainWindow extends FrameWindow implements ActionListener {
     }
 
     public void addHundred() {
-        balance += 100;
-        if (state == STATES.STATE_0) {
-            state = STATES.STATE_LESS_500;
-        }
-        else if (state == STATES.STATE_LESS_500) {
-            if (balance == 500) {
-                state = STATES.STATE_500;
-            }
-        }
-        else if (state == STATES.STATE_500) {
-            state = STATES.STATE_LESS_1000;
-        }
-        else if (state == STATES.STATE_LESS_1000) {
-            if (balance == 1000) {
-                state = STATES.STATE_EQUAL_OR_MORE_1000;
-            }
-        }
+        state.addHundred();
         setBalanceText();
         setMsgText("");
     }
 
     public void addFiveHundred() {
-        balance += 500;
-        if (state == STATES.STATE_0) {
-            state = STATES.STATE_500;
-        }
-        else if (state == STATES.STATE_LESS_500) {
-            state = STATES.STATE_LESS_1000;
-        }
-        else if (state == STATES.STATE_500 || state == STATES.STATE_LESS_1000) {
-            state = STATES.STATE_EQUAL_OR_MORE_1000;
-        }
+        state.addFiveHundred();
         setBalanceText();
         setMsgText("");
-    }
-
+    }이
     public void addThousand() {
-        balance += 1000;
-        if (state == STATES.STATE_0 || state == STATES.STATE_LESS_500
-                || state == STATES.STATE_500 || state == STATES.STATE_LESS_1000) {
-            state = STATES.STATE_EQUAL_OR_MORE_1000;
-            setMsgText("");
-        }
-        else if (state == STATES.STATE_EQUAL_OR_MORE_1000) {
-            setMsgText("이미 충분한 돈이 투입되었습니다. 음료를 선택하세요");
-        }
+        state.addThousand();
         setBalanceText();
     }
 
     public void returnChanges() {
-        if (state == STATES.STATE_LESS_500 || state == STATES.STATE_500 ||
-            state == STATES.STATE_LESS_1000 || state == STATES.STATE_EQUAL_OR_MORE_1000) {
-            state = STATES.STATE_0;
-            setMsgText("" + balance + "원을 반환합니다");
-            balance = 0;
-            setBalanceText();
-        }
-        else {
-            setMsgText("");
-        }
+        state.returnChanges();
     }
 
     public void selectBeverage() {
-        if (state == STATES.STATE_EQUAL_OR_MORE_1000) {
-            String msg = "음료를 내보냅니다. 배출구를 확인하세요.";
-            balance -= 1000;
-            if (balance > 0) {
-                msg = msg + " 거스름돈 " + balance + "원을 반환합니다.";
-                balance = 0;
-            }
-            setBalanceText();
-            setMsgText(msg);
-            state = STATES.STATE_0;
-        }
-        else if (state == STATES.STATE_0) {
-            setMsgText("돈을 넣은 후에 눌러주세요");
-        }
-        else {
-            setMsgText("1000원 이상을 넣은 후에 눌러주세요");
-        }
+        state.selectBeverage();
+    }
+
+    public void setState(StateInterface state) {
+        this.state = state;
+    }
+
+    public void setBalance(int balance) {
+        this.balance = balance;
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == hundredButton) {
             addHundred();
-        }
-        else if (e.getSource() == fiveHundredButton) {
+        } else if (e.getSource() == fiveHundredButton) {
             addFiveHundred();
-        }
-        else if (e.getSource() == thousandButton) {
+        } else if (e.getSource() == thousandButton) {
             addThousand();
-        }
-        else if (e.getSource() == returnChangesButton) {
+        } else if (e.getSource() == returnChangesButton) {
             returnChanges();
-        }
-        else if (e.getSource() == selectBeverageButton) {
+        } else if (e.getSource() == selectBeverageButton) {
             selectBeverage();
         }
     }

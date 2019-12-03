@@ -1,17 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f7e345e0-018d-4f62-8f9b-ebeedc694a7a" name="Default Changelist" comment="" />
+    <list default="true" id="f7e345e0-018d-4f62-8f9b-ebeedc694a7a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MP06/FrameWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MP06/FrameWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MP06/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MP06/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MP06/MainWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MP06/MainWindow$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MP06/MainWindow$STATES.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MP06/MainWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MP06/MainWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MP06/MyButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MP06/MyButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mp08soln/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mp08soln/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mp08soln/out/production/mp08soln/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mp08soln/out/production/mp08soln/Circle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mp08soln/out/production/mp08soln/DrawShapeCanvas.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mp08soln/out/production/mp08soln/DrawShapeCanvas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mp08soln/out/production/mp08soln/DrawShapeInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mp08soln/out/production/mp08soln/DrawShapeInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mp08soln/out/production/mp08soln/DrawShapeWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mp08soln/out/production/mp08soln/DrawShapeWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mp08soln/out/production/mp08soln/DrawingState.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mp08soln/out/production/mp08soln/DrawingState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mp08soln/out/production/mp08soln/Ellipse.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mp08soln/out/production/mp08soln/Ellipse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mp08soln/out/production/mp08soln/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mp08soln/out/production/mp08soln/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mp08soln/out/production/mp08soln/MainPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mp08soln/out/production/mp08soln/MainPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mp08soln/out/production/mp08soln/MyDrawShape.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mp08soln/out/production/mp08soln/MyDrawShape.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mp08soln/out/production/mp08soln/Parallelogram.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mp08soln/out/production/mp08soln/Parallelogram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mp08soln/out/production/mp08soln/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mp08soln/out/production/mp08soln/Point.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mp08soln/out/production/mp08soln/RectShape.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mp08soln/out/production/mp08soln/RectShape.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mp08soln/out/production/mp08soln/RectShapeFactory$RectShapeEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mp08soln/out/production/mp08soln/RectShapeFactory$RectShapeEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mp08soln/out/production/mp08soln/RectShapeFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mp08soln/out/production/mp08soln/RectShapeFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mp08soln/out/production/mp08soln/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mp08soln/out/production/mp08soln/Rectangle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mp08soln/out/production/mp08soln/SelectingState.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mp08soln/out/production/mp08soln/SelectingState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mp08soln/out/production/mp08soln/StateInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mp08soln/out/production/mp08soln/StateInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mp08soln/out/production/mp08soln/Trapezoid.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mp08soln/out/production/mp08soln/Trapezoid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mp08soln/out/production/mp08soln/images/Selection.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mp08soln/out/production/mp08soln/images/drawing.png" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
   <component name="ProjectId" id="1U6vBA753pdegfIcTQqlROkohmz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -52,15 +101,15 @@
     </task>
     <servers />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/MainWindow.java</url>
-          <line>105</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
