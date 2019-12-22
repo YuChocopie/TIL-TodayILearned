@@ -3,4 +3,11 @@
 ~~~
 android
 blockchain
+
+ComputerNetwork
+DesignPattern
+JavaScript
+web-react
+Spring-kotlin
+NodeJS
 ~~~
