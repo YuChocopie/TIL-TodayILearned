@@ -8,13 +8,13 @@
 public class Example { 
 	int lastid;
 	
-  public void resetldO {
-    lastID = 0;
-  }
-  
-  public int getNextldO {
-  ++lastID;
-  }
+	public void resetldO {
+		lastID = 0;
+	}
+
+	public int getNextldO {
+		++lastID;
+	}
 }
 ~~~
 
